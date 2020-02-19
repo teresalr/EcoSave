@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D09014623FDC2F900E359F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */; };
 		4D271F4023FDC0EC0045D13E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F3F23FDC0EC0045D13E /* AppDelegate.swift */; };
 		4D271F4223FDC0EC0045D13E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F4123FDC0EC0045D13E /* SceneDelegate.swift */; };
 		4D271F4423FDC0EC0045D13E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F4323FDC0EC0045D13E /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		4D271F4C23FDC0EE0045D13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */; };
 		4D271F5723FDC0EE0045D13E /* EcoSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F5623FDC0EE0045D13E /* EcoSaveTests.swift */; };
 		4D271F6223FDC0EE0045D13E /* EcoSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F6123FDC0EE0045D13E /* EcoSaveUITests.swift */; };
+		6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333E04A582978AB2481DF901 /* Pods_EcoSave.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0521FE2AD7B7394D89C8FAAD /* Pods-EcoSave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.release.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.release.xcconfig"; sourceTree = "<group>"; };
+		333E04A582978AB2481DF901 /* Pods_EcoSave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoSave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D271F3C23FDC0EC0045D13E /* EcoSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D271F3F23FDC0EC0045D13E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D271F4123FDC0EC0045D13E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		4D271F5D23FDC0EE0045D13E /* EcoSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D271F6123FDC0EE0045D13E /* EcoSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSaveUITests.swift; sourceTree = "<group>"; };
 		4D271F6323FDC0EE0045D13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.debug.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,8 @@
 				4D271F5523FDC0EE0045D13E /* EcoSaveTests */,
 				4D271F6023FDC0EE0045D13E /* EcoSaveUITests */,
 				4D271F3D23FDC0EC0045D13E /* Products */,
+				E592761F0BD5D273DBF3E1BA /* Pods */,
+				C31928923495DC1A0B0F4113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 				4D271F4523FDC0EC0045D13E /* Main.storyboard */,
 				4D271F4823FDC0EE0045D13E /* Assets.xcassets */,
 				4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */,
+				4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */,
 				4D271F4D23FDC0EE0045D13E /* Info.plist */,
 			);
 			path = EcoSave;
@@ -128,6 +138,23 @@
 			path = EcoSaveUITests;
 			sourceTree = "<group>";
 		};
+		C31928923495DC1A0B0F4113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				333E04A582978AB2481DF901 /* Pods_EcoSave.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E592761F0BD5D273DBF3E1BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */,
+				0521FE2AD7B7394D89C8FAAD /* Pods-EcoSave.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D271F6623FDC0EE0045D13E /* Build configuration list for PBXNativeTarget "EcoSave" */;
 			buildPhases = (
+				A10408355CB3AC2190160D57 /* [CP] Check Pods Manifest.lock */,
 				4D271F3823FDC0EC0045D13E /* Sources */,
 				4D271F3923FDC0EC0045D13E /* Frameworks */,
 				4D271F3A23FDC0EC0045D13E /* Resources */,
+				BCB795F191AA230061C1AA36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D09014623FDC2F900E359F3 /* GoogleService-Info.plist in Resources */,
 				4D271F4C23FDC0EE0045D13E /* LaunchScreen.storyboard in Resources */,
 				4D271F4923FDC0EE0045D13E /* Assets.xcassets in Resources */,
 				4D271F4723FDC0EC0045D13E /* Main.storyboard in Resources */,
@@ -253,6 +283,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A10408355CB3AC2190160D57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoSave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB795F191AA230061C1AA36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D271F3823FDC0EC0045D13E /* Sources */ = {
@@ -432,6 +504,7 @@
 		};
 		4D271F6723FDC0EE0045D13E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +522,7 @@
 		};
 		4D271F6823FDC0EE0045D13E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0521FE2AD7B7394D89C8FAAD /* Pods-EcoSave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

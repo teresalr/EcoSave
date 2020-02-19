@@ -1,0 +1,6 @@
+framework module Pods_EcoSave {
+  umbrella header "Pods-EcoSave-umbrella.h"
+
+  export *
+  module * { export * }
+}
