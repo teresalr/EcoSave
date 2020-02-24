@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraViewController: UIViewController {
 
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var toolbar: UIView!
+    
+    var captureSession = AVCaptureSession()
+    
+    var videoPreviewLayer: AVCaptureVideoPreviewLayer?
+    var qrCodeFrameView: UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
