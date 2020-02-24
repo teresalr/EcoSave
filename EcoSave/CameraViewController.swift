@@ -100,4 +100,88 @@ class CameraViewController: UIViewController {
     }
     */
 
+    
+    func launchApp(decodedURL: String) {
+           
+           if presentedViewController != nil {
+               return
+           }
+           
+           let alertPrompt = UIAlertController(title: "Open App", message: "You're going to open \(decodedURL)", preferredStyle: .actionSheet)
+           let confirmAction = UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: { (action) -> Void in
+               
+               if let url = URL(string: decodedURL) {
+                   if UIApplication.shared.canOpenURL(url) {
+                       UIApplication.shared.open(url)
+                   }
+               }
+           })
+           
+           let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+           
+           alertPrompt.addAction(confirmAction)
+           alertPrompt.addAction(cancelAction)
+           
+           present(alertPrompt, animated: true, completion: nil)
+       }
+     private func updatePreviewLayer(layer: AVCaptureConnection, orientation: AVCaptureVideoOrientation) {
+       layer.videoOrientation = orientation
+       videoPreviewLayer?.frame = self.view.bounds
+     }
+     
+     override func viewDidLayoutSubviews() {
+       super.viewDidLayoutSubviews()
+       
+       if let connection =  self.videoPreviewLayer?.connection  {
+         let currentDevice: UIDevice = UIDevice.current
+         let orientation: UIDeviceOrientation = currentDevice.orientation
+         let previewLayerConnection : AVCaptureConnection = connection
+         
+         if previewLayerConnection.isVideoOrientationSupported {
+           switch (orientation) {
+           case .portrait:
+             updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
+             break
+           case .landscapeRight:
+             updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeLeft)
+             break
+           case .landscapeLeft:
+             updatePreviewLayer(layer: previewLayerConnection, orientation: .landscapeRight)
+             break
+           case .portraitUpsideDown:
+             updatePreviewLayer(layer: previewLayerConnection, orientation: .portraitUpsideDown)
+             break
+           default:
+             updatePreviewLayer(layer: previewLayerConnection, orientation: .portrait)
+             break
+           }
+         }
+       }
+     }
+
+}
+
+extension CameraViewController: AVCaptureMetadataOutputObjectsDelegate {
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        // Check if the metadataObjects array is not nil and it contains at least one object.
+        if metadataObjects.count == 0 {
+            qrCodeFrameView?.frame = CGRect.zero
+            return
+        }
+        
+        // Get the metadata object.
+        let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
+        
+        if supportedCodeTypes.contains(metadataObj.type) {
+            // If the found metadata is equal to the QR code metadata (or barcode) then update the status label's text and set the bounds
+            let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
+            qrCodeFrameView?.frame = barCodeObject!.bounds
+            
+            if metadataObj.stringValue != nil {
+                launchApp(decodedURL: metadataObj.stringValue!)
+            }
+        }
+    }
+    
 }
