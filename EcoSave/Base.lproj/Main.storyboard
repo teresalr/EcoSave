@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="D4e-rL-jIv" customClass="CameraViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXh-mi-YKU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -48,18 +48,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="s1Z-42-eei"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="cDT-lR-IlO" appends="YES" id="kHf-Bq-X6d"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="rxf-C3-BuV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nai-mZ-irm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="cDT-lR-IlO">
-                    <connections>
-                        <segue destination="D4e-rL-jIv" kind="show" id="ECE-6J-tQe"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="994" y="113"/>
         </scene>
@@ -73,23 +65,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="pBx-py-kCz"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="cWb-S3-Bk0" appends="YES" id="CpW-qn-ILz"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="enR-8w-Meo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anW-Fb-emO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="cWb-S3-Bk0">
-                    <connections>
-                        <segue destination="D4e-rL-jIv" kind="show" id="bC8-KF-taY"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2725" y="113"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bC8-KF-taY"/>
-    </inferredMetricsTieBreakers>
 </document>
