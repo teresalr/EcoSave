@@ -18,6 +18,7 @@
 		4DA09C3C2400446100AF4E35 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3B2400446100AF4E35 /* CameraViewController.swift */; };
 		4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */; };
 		4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */; };
+		4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFECE1A2405AED80002AB56 /* Scanner.swift */; };
 		6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333E04A582978AB2481DF901 /* Pods_EcoSave.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		4DA09C3B2400446100AF4E35 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		4DFECE1A2405AED80002AB56 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.debug.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */,
 				4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */,
 				4DA09C3B2400446100AF4E35 /* CameraViewController.swift */,
+				4DFECE1A2405AED80002AB56 /* Scanner.swift */,
 				4D271F4823FDC0EE0045D13E /* Assets.xcassets */,
 				4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */,
 				4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */,
@@ -341,6 +344,7 @@
 				4D271F4023FDC0EC0045D13E /* AppDelegate.swift in Sources */,
 				4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */,
 				4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */,
+				4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */,
 				4D271F4223FDC0EC0045D13E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
