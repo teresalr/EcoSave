@@ -20,6 +20,7 @@
 		4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */; };
 		4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFECE1A2405AED80002AB56 /* Scanner.swift */; };
 		6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333E04A582978AB2481DF901 /* Pods_EcoSave.framework */; };
+		A2B14E3A2408331200D2EAD2 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B14E392408331200D2EAD2 /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		4DFECE1A2405AED80002AB56 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.debug.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.debug.xcconfig"; sourceTree = "<group>"; };
+		A2B14E392408331200D2EAD2 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */,
 				4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */,
 				4D271F4D23FDC0EE0045D13E /* Info.plist */,
+				A2B14E392408331200D2EAD2 /* PopUpViewController.swift */,
 			);
 			path = EcoSave;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				4DA09C3C2400446100AF4E35 /* CameraViewController.swift in Sources */,
 				4D271F4023FDC0EC0045D13E /* AppDelegate.swift in Sources */,
+				A2B14E3A2408331200D2EAD2 /* PopUpViewController.swift in Sources */,
 				4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */,
 				4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */,
 				4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */,

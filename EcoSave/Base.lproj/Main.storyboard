@@ -30,13 +30,28 @@
                         <segue destination="EMu-h7-jRR" kind="show" id="NA0-37-dqh"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="dea-0R-59Q">
+                <swipeGestureRecognizer direction="left" id="dea-0R-59Q">
                     <connections>
                         <segue destination="PKB-ba-n8h" kind="show" id="fqN-Cp-7Dv"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1835" y="113"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="WWc-GX-Hce">
+            <objects>
+                <viewController id="QOH-52-sUP" customClass="PopUpViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLB-lE-9s2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8N6-Li-mOt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyI-7r-NLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="908"/>
         </scene>
         <!--Stats View Controller-->
         <scene sceneID="hqF-Zm-RU2">
@@ -45,7 +60,7 @@
                     <view key="view" contentMode="scaleToFill" id="GuU-b4-anq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="s1Z-42-eei"/>
                     </view>
@@ -62,7 +77,7 @@
                     <view key="view" contentMode="scaleToFill" id="DrK-eJ-AwZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="pBx-py-kCz"/>
                     </view>
