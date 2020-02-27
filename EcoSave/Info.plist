@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to use your camera.</string>
 	<key>NSCameraUseDescription</key>
 	<string>To scan barcodes</string>
 	<key>Privacy - Camera Use Description</key>
