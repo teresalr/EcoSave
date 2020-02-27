@@ -23,6 +23,9 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="UXZ-Zp-mlC"/>
+                    <connections>
+                        <segue destination="QOH-52-sUP" kind="show" identifier="popUpSegue" id="wH3-41-2Or"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa7-zi-WIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="ZU3-Ud-dhD">
@@ -43,11 +46,12 @@
             <objects>
                 <viewController id="QOH-52-sUP" customClass="PopUpViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QLB-lE-9s2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8N6-Li-mOt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="C1l-cK-vYR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyI-7r-NLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

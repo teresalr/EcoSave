@@ -13,17 +13,17 @@ class CameraViewController: UIViewController,  AVCaptureMetadataOutputObjectsDel
 
     private var scanner: Scanner?
 
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    self.scanner = Scanner(withDelegate: self)
-    
-    guard let scanner = self.scanner else {
-        return
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.scanner = Scanner(withDelegate: self)
+        
+        guard let scanner = self.scanner else {
+            return
+        }
+        
+        scanner.requestCaptureSessionStartRunning()
     }
-    
-    scanner.requestCaptureSessionStartRunning()
-}
 
     override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
@@ -56,6 +56,7 @@ override func viewDidLoad() {
         func scanCompleted(withCode code: String)
         {
             print(code)
+            performSegue(withIdentifier: "popUpSegue", sender: CameraViewController())
             scanner?.requestCaptureSessionStopRunning()
         }
     }
