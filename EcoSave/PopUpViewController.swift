@@ -11,11 +11,23 @@ import UIKit
 class PopUpViewController: UIViewController {
     
     var barcode : String?
+    @IBOutlet weak var productTitle: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var ratingImage: UIImageView!
+    var rating : Int?
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
+        //Indetifies Rating
+        rating = 3
+        
+        //Sets color based on rating
+        if rating == 1{
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
     

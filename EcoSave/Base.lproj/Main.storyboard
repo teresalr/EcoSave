@@ -49,31 +49,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Label can be this long wow!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29I-8S-TLg">
-                                <rect key="frame" x="20" y="20" width="374" height="85"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Nuggies - EcoSave Farms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29I-8S-TLg">
+                                <rect key="frame" x="20" y="20" width="374" height="91"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-hh-E86">
-                                <rect key="frame" x="20" y="113" width="374" height="223"/>
+                                <rect key="frame" x="20" y="119" width="374" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="vCP-v1-Ec1"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-7I-Czf">
+                                <rect key="frame" x="20" y="357" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="NXI-Mk-DY8"/>
+                                    <constraint firstAttribute="width" constant="125" id="Xmb-0C-dhp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overall Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1q-lS-g2m">
+                                <rect key="frame" x="153" y="373" width="141" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lethal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMC-S0-Xs2">
+                                <rect key="frame" x="153" y="403" width="163" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="62"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="29I-8S-TLg" secondAttribute="trailing" constant="20" id="2r3-pN-raE"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="F9M-xw-jkw"/>
+                            <constraint firstItem="cT2-7I-Czf" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="Nus-UL-w3o"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="top" secondItem="29I-8S-TLg" secondAttribute="bottom" constant="8" id="P1E-IB-ff2"/>
                             <constraint firstItem="29I-8S-TLg" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="Ue5-E8-IG6"/>
+                            <constraint firstItem="cT2-7I-Czf" firstAttribute="top" secondItem="gdp-hh-E86" secondAttribute="bottom" constant="15" id="XFJ-Dc-iDH"/>
                             <constraint firstItem="29I-8S-TLg" firstAttribute="top" secondItem="8N6-Li-mOt" secondAttribute="top" constant="20" id="dPC-fa-nlU"/>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="gdp-hh-E86" secondAttribute="trailing" constant="20" id="hCH-bR-D2f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8N6-Li-mOt"/>
                     </view>
                     <navigationItem key="navigationItem" id="C1l-cK-vYR"/>
+                    <connections>
+                        <outlet property="productImage" destination="gdp-hh-E86" id="bsw-PX-ITL"/>
+                        <outlet property="productTitle" destination="29I-8S-TLg" id="Z8C-Lj-Zzi"/>
+                        <outlet property="ratingImage" destination="cT2-7I-Czf" id="8Xt-aW-bdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyI-7r-NLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
