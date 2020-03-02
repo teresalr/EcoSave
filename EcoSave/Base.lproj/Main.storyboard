@@ -98,6 +98,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="C1l-cK-vYR"/>
                     <connections>
+                        <outlet property="descriptor" destination="YMC-S0-Xs2" id="Mfo-no-c7T"/>
                         <outlet property="productImage" destination="gdp-hh-E86" id="bsw-PX-ITL"/>
                         <outlet property="productTitle" destination="29I-8S-TLg" id="Z8C-Lj-Zzi"/>
                         <outlet property="ratingImage" destination="cT2-7I-Czf" id="8Xt-aW-bdc"/>

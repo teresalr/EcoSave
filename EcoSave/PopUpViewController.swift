@@ -14,6 +14,8 @@ class PopUpViewController: UIViewController {
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var descriptor: UILabel!
+    
     var rating : Int?
     
     override func viewDidLoad() {
@@ -25,7 +27,20 @@ class PopUpViewController: UIViewController {
         
         //Sets color based on rating
         if rating == 1{
+            descriptor.text = "Terrible"
             
+        }
+        else if rating == 2{
+            descriptor.text = "Bad"
+        }
+        else if rating == 3{
+            descriptor.text = "Decent"
+        }
+        else if rating == 4{
+            descriptor.text = "Great"
+        }
+        else if rating == 5{
+            descriptor.text = "Amazing"
         }
         
         // Do any additional setup after loading the view.
