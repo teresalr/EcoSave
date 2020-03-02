@@ -9,8 +9,11 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
-
+    
+    var barcode : String?
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

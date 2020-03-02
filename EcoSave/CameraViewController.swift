@@ -12,7 +12,8 @@ import AVFoundation
 class CameraViewController: UIViewController,  AVCaptureMetadataOutputObjectsDelegate, ScannerDelegate {
 
     private var scanner: Scanner?
-
+    private var currentBarcode: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,9 +56,15 @@ class CameraViewController: UIViewController,  AVCaptureMetadataOutputObjectsDel
         
         func scanCompleted(withCode code: String)
         {
-            print(code)
+            currentBarcode = code
             performSegue(withIdentifier: "popUpSegue", sender: CameraViewController())
             scanner?.requestCaptureSessionStopRunning()
+        }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.destination is PopUpViewController{
+                let vc = segue.destination as? PopUpViewController
+                vc?.barcode = currentBarcode
+            }
         }
     }
 
