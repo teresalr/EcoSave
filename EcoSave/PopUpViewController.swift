@@ -23,7 +23,22 @@ class PopUpViewController: UIViewController {
         super.viewDidLoad()
         
         //Indetifies Rating
-        rating = 3
+        
+        if barcode == "078783508037"{
+            rating = 1
+        }
+        else if barcode == "602652181030"{
+            rating = 2
+        }
+        else if barcode == "052000001730"{
+            rating = 3
+        }
+        else if barcode == "014100043706"{
+            rating = 4
+        }
+        else if barcode == "078783508037"{
+            rating = 5
+        }
         
         //Sets color based on rating
         if rating == 1{
