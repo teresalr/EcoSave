@@ -12,7 +12,6 @@
 		4D271F4223FDC0EC0045D13E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F4123FDC0EC0045D13E /* SceneDelegate.swift */; };
 		4D271F4723FDC0EC0045D13E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D271F4523FDC0EC0045D13E /* Main.storyboard */; };
 		4D271F4923FDC0EE0045D13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D271F4823FDC0EE0045D13E /* Assets.xcassets */; };
-		4D271F4C23FDC0EE0045D13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */; };
 		4D271F5723FDC0EE0045D13E /* EcoSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F5623FDC0EE0045D13E /* EcoSaveTests.swift */; };
 		4D271F6223FDC0EE0045D13E /* EcoSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F6123FDC0EE0045D13E /* EcoSaveUITests.swift */; };
 		4DA09C3C2400446100AF4E35 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3B2400446100AF4E35 /* CameraViewController.swift */; };
@@ -49,7 +48,6 @@
 		4D271F4123FDC0EC0045D13E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D271F4623FDC0EC0045D13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D271F4823FDC0EE0045D13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4D271F4B23FDC0EE0045D13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D271F4D23FDC0EE0045D13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D271F5223FDC0EE0045D13E /* EcoSaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoSaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D271F5623FDC0EE0045D13E /* EcoSaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSaveTests.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				4DA09C3B2400446100AF4E35 /* CameraViewController.swift */,
 				4DFECE1A2405AED80002AB56 /* Scanner.swift */,
 				4D271F4823FDC0EE0045D13E /* Assets.xcassets */,
-				4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */,
 				4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */,
 				4D271F4D23FDC0EE0045D13E /* Info.plist */,
 				A2B14E392408331200D2EAD2 /* PopUpViewController.swift */,
@@ -274,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D09014623FDC2F900E359F3 /* GoogleService-Info.plist in Resources */,
-				4D271F4C23FDC0EE0045D13E /* LaunchScreen.storyboard in Resources */,
 				4D271F4923FDC0EE0045D13E /* Assets.xcassets in Resources */,
 				4D271F4723FDC0EC0045D13E /* Main.storyboard in Resources */,
 			);
@@ -391,14 +387,6 @@
 				4D271F4623FDC0EC0045D13E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4D271F4A23FDC0EE0045D13E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D271F4B23FDC0EE0045D13E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
