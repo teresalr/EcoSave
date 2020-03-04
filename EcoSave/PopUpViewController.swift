@@ -28,19 +28,23 @@ class PopUpViewController: UIViewController {
         //Sets color based on rating
         if rating == 1{
             descriptor.text = "Terrible"
-            
+            descriptor.textColor = UIColor.red
         }
         else if rating == 2{
             descriptor.text = "Bad"
+            descriptor.textColor = UIColor.orange
         }
         else if rating == 3{
             descriptor.text = "Decent"
+            descriptor.textColor = UIColor(red: 247/255, green: 227/255, blue: 0, alpha: 1)
         }
         else if rating == 4{
             descriptor.text = "Great"
+            descriptor.textColor = UIColor(red: 183/255, green: 255/255, blue: 0, alpha: 1)
         }
         else if rating == 5{
             descriptor.text = "Amazing"
+            descriptor.textColor = UIColor.green
         }
         
         // Do any additional setup after loading the view.
