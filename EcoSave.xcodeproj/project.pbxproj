@@ -18,8 +18,8 @@
 		4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */; };
 		4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */; };
 		4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFECE1A2405AED80002AB56 /* Scanner.swift */; };
-		6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333E04A582978AB2481DF901 /* Pods_EcoSave.framework */; };
 		A2B14E3A2408331200D2EAD2 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B14E392408331200D2EAD2 /* PopUpViewController.swift */; };
+		DE884F972CC403A7A2C7AC27 /* libPods-EcoSave.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C8DF85381FD493B576793B /* libPods-EcoSave.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		0521FE2AD7B7394D89C8FAAD /* Pods-EcoSave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.release.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.release.xcconfig"; sourceTree = "<group>"; };
-		333E04A582978AB2481DF901 /* Pods_EcoSave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoSave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D09014523FDC2F900E359F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D271F3C23FDC0EC0045D13E /* EcoSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D271F3F23FDC0EC0045D13E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		4DFECE1A2405AED80002AB56 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		88C8DF85381FD493B576793B /* libPods-EcoSave.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EcoSave.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9C9B9DFB6FF5AA87F45EA1 /* Pods-EcoSave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSave.debug.xcconfig"; path = "Target Support Files/Pods-EcoSave/Pods-EcoSave.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B14E392408331200D2EAD2 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7D929189597806374B24DF /* Pods_EcoSave.framework in Frameworks */,
+				DE884F972CC403A7A2C7AC27 /* libPods-EcoSave.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 		C31928923495DC1A0B0F4113 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				333E04A582978AB2481DF901 /* Pods_EcoSave.framework */,
+				88C8DF85381FD493B576793B /* libPods-EcoSave.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,7 +175,6 @@
 				4D271F3823FDC0EC0045D13E /* Sources */,
 				4D271F3923FDC0EC0045D13E /* Frameworks */,
 				4D271F3A23FDC0EC0045D13E /* Resources */,
-				BCB795F191AA230061C1AA36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,23 +312,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BCB795F191AA230061C1AA36 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcoSave/Pods-EcoSave-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
