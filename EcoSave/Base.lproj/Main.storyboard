@@ -68,16 +68,22 @@
                                     <constraint firstAttribute="width" constant="125" id="Xmb-0C-dhp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overall Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1q-lS-g2m">
-                                <rect key="frame" x="153" y="373" width="141" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1q-lS-g2m">
+                                <rect key="frame" x="157" y="373" width="141" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="LJQ-Ck-D2Z"/>
+                                    <constraint firstAttribute="width" constant="141" id="dc0-JP-uhT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lethal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMC-S0-Xs2">
-                                <rect key="frame" x="153" y="403" width="163" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lethal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMC-S0-Xs2">
+                                <rect key="frame" x="157" y="403" width="163" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="1JH-eO-Voc"/>
+                                    <constraint firstAttribute="width" constant="163" id="l2a-Hs-UZ0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="62"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -85,14 +91,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="w1q-lS-g2m" firstAttribute="leading" secondItem="YMC-S0-Xs2" secondAttribute="leading" id="1dJ-eY-8cI"/>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="29I-8S-TLg" secondAttribute="trailing" constant="20" id="2r3-pN-raE"/>
+                            <constraint firstItem="YMC-S0-Xs2" firstAttribute="top" secondItem="w1q-lS-g2m" secondAttribute="bottom" constant="3" id="9IR-hc-DDp"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="F9M-xw-jkw"/>
-                            <constraint firstItem="cT2-7I-Czf" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="Nus-UL-w3o"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="top" secondItem="29I-8S-TLg" secondAttribute="bottom" constant="8" id="P1E-IB-ff2"/>
                             <constraint firstItem="29I-8S-TLg" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="Ue5-E8-IG6"/>
                             <constraint firstItem="cT2-7I-Czf" firstAttribute="top" secondItem="gdp-hh-E86" secondAttribute="bottom" constant="15" id="XFJ-Dc-iDH"/>
                             <constraint firstItem="29I-8S-TLg" firstAttribute="top" secondItem="8N6-Li-mOt" secondAttribute="top" constant="20" id="dPC-fa-nlU"/>
+                            <constraint firstItem="w1q-lS-g2m" firstAttribute="leading" secondItem="cT2-7I-Czf" secondAttribute="trailing" constant="12" id="e8E-6f-2u3"/>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="gdp-hh-E86" secondAttribute="trailing" constant="20" id="hCH-bR-D2f"/>
+                            <constraint firstItem="YMC-S0-Xs2" firstAttribute="leading" secondItem="QLB-lE-9s2" secondAttribute="centerX" constant="-50" id="yiG-B5-y7U"/>
+                            <constraint firstItem="w1q-lS-g2m" firstAttribute="top" secondItem="gdp-hh-E86" secondAttribute="bottom" constant="31" id="zgY-gd-aMb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8N6-Li-mOt"/>
                     </view>
