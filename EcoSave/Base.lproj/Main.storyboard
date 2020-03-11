@@ -16,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-Im-B2p">
-                                <rect key="frame" x="20" y="720" width="86" height="150"/>
+                                <rect key="frame" x="20" y="795" width="86" height="75"/>
                                 <state key="normal" title="Button" image="shopping"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-wm-u1i">
-                                <rect key="frame" x="325" y="740" width="60" height="122"/>
+                                <rect key="frame" x="325" y="801" width="60" height="61"/>
                                 <state key="normal" title="Button" image="profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-nG-zrN">
-                                <rect key="frame" x="165" y="732" width="99" height="138"/>
+                                <rect key="frame" x="165" y="801" width="99" height="69"/>
                                 <state key="normal" title="Button" image="camera selected"/>
                             </button>
                         </subviews>
@@ -154,19 +154,29 @@
                                 <state key="normal" image="shoppingSelected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-kx-kam">
-                                <rect key="frame" x="334" y="678" width="51" height="122"/>
+                                <rect key="frame" x="334" y="739" width="51" height="61"/>
                                 <state key="normal" image="profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-uC-Udk">
                                 <rect key="frame" x="175" y="739" width="98" height="69"/>
                                 <state key="normal" image="camera"/>
                             </button>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-dI-RvK">
+                                <rect key="frame" x="0.0" y="14" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dmQ-Im-k83"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="RLZ-dI-RvK" firstAttribute="centerX" secondItem="GuU-b4-anq" secondAttribute="centerX" id="A1c-db-p0R"/>
+                            <constraint firstItem="RLZ-dI-RvK" firstAttribute="leading" secondItem="s1Z-42-eei" secondAttribute="leading" id="FcJ-Vy-3Xh"/>
                             <constraint firstItem="s1Z-42-eei" firstAttribute="trailing" secondItem="Ej7-kx-kam" secondAttribute="trailing" constant="29" id="Lff-4v-FK1"/>
                             <constraint firstItem="Ej7-kx-kam" firstAttribute="leading" secondItem="vTQ-uC-Udk" secondAttribute="trailing" constant="61" id="QW1-Cy-Pib"/>
+                            <constraint firstItem="RLZ-dI-RvK" firstAttribute="top" secondItem="s1Z-42-eei" secondAttribute="top" constant="14" id="mVz-cV-ceh"/>
                             <constraint firstItem="vTQ-uC-Udk" firstAttribute="leading" secondItem="cGV-IW-RS3" secondAttribute="trailing" constant="59" id="nFL-I2-d2E"/>
                             <constraint firstItem="s1Z-42-eei" firstAttribute="bottom" secondItem="Ej7-kx-kam" secondAttribute="bottom" constant="8" id="wwK-O7-3n9"/>
                             <constraint firstItem="cGV-IW-RS3" firstAttribute="leading" secondItem="s1Z-42-eei" secondAttribute="leading" constant="20" id="yZv-Zz-tWF"/>
