@@ -8,34 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Random View Controller-->
-        <scene sceneID="YuP-cU-Mgg">
-            <objects>
-                <viewController id="FgN-WY-7aL" customClass="RandomViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZsI-AC-qwh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhf-Ce-vvN">
-                                <rect key="frame" x="144" y="475" width="127" height="62"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="PRESS"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="fhf-Ce-vvN" firstAttribute="centerX" secondItem="ZsI-AC-qwh" secondAttribute="centerX" id="Ijc-yd-tgh"/>
-                            <constraint firstItem="fhf-Ce-vvN" firstAttribute="leading" secondItem="GHh-jt-5Id" secondAttribute="leading" constant="144" id="RTK-0F-Qrp"/>
-                            <constraint firstItem="GHh-jt-5Id" firstAttribute="bottom" secondItem="fhf-Ce-vvN" secondAttribute="bottom" constant="325" id="U76-TK-pcY"/>
-                            <constraint firstItem="fhf-Ce-vvN" firstAttribute="top" secondItem="GHh-jt-5Id" secondAttribute="top" constant="431" id="clY-wt-cTz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="GHh-jt-5Id"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rTt-8H-3Ul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="926" y="86"/>
-        </scene>
         <!--Camera View Controller-->
         <scene sceneID="Wc6-Ra-sBz">
             <objects>

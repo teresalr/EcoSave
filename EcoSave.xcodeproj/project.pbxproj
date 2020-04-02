@@ -14,7 +14,6 @@
 		4D271F4923FDC0EE0045D13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D271F4823FDC0EE0045D13E /* Assets.xcassets */; };
 		4D271F5723FDC0EE0045D13E /* EcoSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F5623FDC0EE0045D13E /* EcoSaveTests.swift */; };
 		4D271F6223FDC0EE0045D13E /* EcoSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271F6123FDC0EE0045D13E /* EcoSaveUITests.swift */; };
-		4D9B52EE24362DBE00854BE8 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9B52ED24362DBE00854BE8 /* RandomViewController.swift */; };
 		4DA09C3C2400446100AF4E35 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3B2400446100AF4E35 /* CameraViewController.swift */; };
 		4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */; };
 		4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */; };
@@ -55,7 +54,6 @@
 		4D271F5D23FDC0EE0045D13E /* EcoSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D271F6123FDC0EE0045D13E /* EcoSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoSaveUITests.swift; sourceTree = "<group>"; };
 		4D271F6323FDC0EE0045D13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D9B52ED24362DBE00854BE8 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		4DA09C3B2400446100AF4E35 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				4D271F3F23FDC0EC0045D13E /* AppDelegate.swift */,
 				4D271F4123FDC0EC0045D13E /* SceneDelegate.swift */,
 				4D271F4523FDC0EC0045D13E /* Main.storyboard */,
-				4D9B52ED24362DBE00854BE8 /* RandomViewController.swift */,
 				4DA09C3F2400453B00AF4E35 /* ShoppingViewController.swift */,
 				4DA09C3D240044FE00AF4E35 /* StatsViewController.swift */,
 				4DA09C3B2400446100AF4E35 /* CameraViewController.swift */,
@@ -329,7 +326,6 @@
 				A2B14E3A2408331200D2EAD2 /* PopUpViewController.swift in Sources */,
 				4DA09C3E240044FE00AF4E35 /* StatsViewController.swift in Sources */,
 				4DA09C402400453B00AF4E35 /* ShoppingViewController.swift in Sources */,
-				4D9B52EE24362DBE00854BE8 /* RandomViewController.swift in Sources */,
 				4DFECE1B2405AED80002AB56 /* Scanner.swift in Sources */,
 				4D271F4223FDC0EC0045D13E /* SceneDelegate.swift in Sources */,
 			);
