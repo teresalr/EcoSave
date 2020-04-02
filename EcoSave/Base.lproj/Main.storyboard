@@ -21,7 +21,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="PRESS"/>
                                 <connections>
-                                    <action selector="switchScreen:" destination="FgN-WY-7aL" eventType="touchUpInside" id="e99-hL-ZTT"/>
                                     <segue destination="D4e-rL-jIv" kind="show" id="P3A-I8-zqX"/>
                                 </connections>
                             </button>

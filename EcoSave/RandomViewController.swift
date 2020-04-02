@@ -11,10 +11,6 @@ import UIKit
 
 class RandomViewController: UIViewController {
 
-    @IBAction func switchScreen(_ sender: UIButton) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
