@@ -12,19 +12,64 @@ class StatsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    override func didReceiveMemoryWarning() {
+          super.didReceiveMemoryWarning()
+      }
+     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tbView: UITableView!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    let foodProduct = ["Apple","Apple suace","Apple chips","apple juice", "banana","banana chips","cereal", "cinnanon rolls","ice cream","potato chips", "pop corn","plastic bag",]
+    
+        
+        var searchThings = [String]()
+        var searching = false
     }
-    */
 
-}
+    extension StatsViewController: UITableViewDelegate, UITableViewDataSource{
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            if searching == true{
+                return searchThings.count
+            }
+            else{
+                return foodProduct.count
+            }
+    //         return foodProduct.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+
+                    if searching == false {
+                    
+                        cell?.textLabel?.text = foodProduct[indexPath.row]
+                       
+                    }
+                    else{
+                     cell?.textLabel?.text = searchThings[indexPath.row]
+                    }
+            
+               return cell!
+            
+        }
+        
+    }
+
+
+    extension StatsViewController: UISearchBarDelegate
+    {
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String ){
+            searchThings = foodProduct.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+            searching = true
+            tbView.reloadData()
+        }
+        
+        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            searching = false
+            searchBar.text = ""
+            tbView.reloadData()
+        }
+    }
+
