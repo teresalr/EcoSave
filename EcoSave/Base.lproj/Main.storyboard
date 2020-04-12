@@ -13,19 +13,19 @@
             <objects>
                 <viewController id="D4e-rL-jIv" customClass="CameraViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXh-mi-YKU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-Im-B2p">
-                                <rect key="frame" x="20" y="795" width="86" height="75"/>
+                                <rect key="frame" x="20" y="741" width="86" height="75"/>
                                 <state key="normal" title="Button" image="shopping"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-wm-u1i">
-                                <rect key="frame" x="325" y="801" width="60" height="61"/>
+                                <rect key="frame" x="325" y="747" width="60" height="61"/>
                                 <state key="normal" title="Button" image="profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-nG-zrN">
-                                <rect key="frame" x="165" y="801" width="99" height="69"/>
+                                <rect key="frame" x="165" y="747" width="99" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="Rq1-uK-w0K"/>
                                 </constraints>
@@ -58,7 +58,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa7-zi-WIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="ZU3-Ud-dhD">
                     <connections>
-                        <segue destination="EMu-h7-jRR" kind="show" id="NA0-37-dqh"/>
+                        <segue destination="EMu-h7-jRR" kind="show" identifier="toShopping" id="NA0-37-dqh"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="dea-0R-59Q">
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="907.36607142857133"/>
         </scene>
-        <!--Stats View Controller-->
+        <!--Shopping View Controller-->
         <scene sceneID="hqF-Zm-RU2">
             <objects>
-                <viewController id="EMu-h7-jRR" customClass="StatsViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EMu-h7-jRR" customClass="ShoppingViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GuU-b4-anq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,10 +169,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-kx-kam">
                                 <rect key="frame" x="334" y="739" width="51" height="61"/>
                                 <state key="normal" image="profile"/>
+                                <connections>
+                                    <segue destination="PKB-ba-n8h" kind="show" id="shi-Kl-Ga2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-uC-Udk">
                                 <rect key="frame" x="175" y="739" width="98" height="69"/>
                                 <state key="normal" image="camera"/>
+                                <connections>
+                                    <segue destination="D4e-rL-jIv" kind="show" id="o8F-vM-JDx"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-dI-RvK">
                                 <rect key="frame" x="0.0" y="14" width="414" height="44"/>
@@ -243,12 +249,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nai-mZ-irm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="893"/>
+            <point key="canvasLocation" x="689.85507246376812" y="892.63392857142856"/>
         </scene>
-        <!--Shopping View Controller-->
+        <!--Stats View Controller-->
         <scene sceneID="OAr-5d-GDh">
             <objects>
-                <viewController id="PKB-ba-n8h" customClass="ShoppingViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PKB-ba-n8h" customClass="StatsViewController" customModule="EcoSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DrK-eJ-AwZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,6 +262,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-b0-WK9">
                                 <rect key="frame" x="20" y="733" width="96" height="75"/>
                                 <state key="normal" image="shopping"/>
+                                <connections>
+                                    <action selector="toShopping:" destination="PKB-ba-n8h" eventType="touchUpInside" id="3Ka-58-hBo"/>
+                                    <segue destination="EMu-h7-jRR" kind="show" id="9zt-42-ycp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3a-Dm-mak">
                                 <rect key="frame" x="334" y="739" width="51" height="61"/>
@@ -264,6 +274,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlT-La-wu4">
                                 <rect key="frame" x="175" y="739" width="98" height="69"/>
                                 <state key="normal" image="camera"/>
+                                <connections>
+                                    <segue destination="D4e-rL-jIv" kind="show" id="kbw-X4-QQy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -298,4 +311,9 @@
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="shi-Kl-Ga2"/>
+        <segue reference="9zt-42-ycp"/>
+        <segue reference="o8F-vM-JDx"/>
+    </inferredMetricsTieBreakers>
 </document>
