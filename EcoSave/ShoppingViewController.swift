@@ -20,7 +20,7 @@ class ShoppingViewController: UIViewController {
     @IBOutlet weak var tbView: UITableView!
     
     
-    let foodProduct = ["Apple","Apple suace","Apple chips","apple juice", "banana","banana chips","cereal", "cinnamon rolls","ice cream","potato chips", "pop corn","plastic bag",]
+    let foodProduct = ["Apple","Apple sauce","Apple chips","Apple juice", "Banana","Banana chips","Cereal", "Cinnamon rolls","Ice cream","Potato chips", "Pop corn","Plastic bag",]
     
         
         var searchThings = [String]()
