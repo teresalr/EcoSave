@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-Im-B2p">
-                                <rect key="frame" x="20" y="852" width="240" height="150"/>
+                                <rect key="frame" x="20" y="927" width="147" height="75"/>
                                 <state key="normal" title="Button" image="shopping"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-wm-u1i">
-                                <rect key="frame" x="622" y="880" width="70" height="122"/>
+                                <rect key="frame" x="622" y="941" width="70" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="gOl-TU-x7w"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-nG-zrN">
-                                <rect key="frame" x="231" y="864" width="250" height="138"/>
+                                <rect key="frame" x="280" y="933" width="152" height="69"/>
                                 <state key="normal" title="Button" image="camera selected"/>
                             </button>
                         </subviews>
@@ -119,14 +119,27 @@
                                 <rect key="frame" x="20" y="444.5" width="672" height="562.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-dm-JdM">
+                                <rect key="frame" x="667" y="13" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="xP8-LC-Djq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <segue destination="D4e-rL-jIv" kind="show" id="0i4-ZQ-ASe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="w1q-lS-g2m" firstAttribute="leading" secondItem="YMC-S0-Xs2" secondAttribute="leading" id="1dJ-eY-8cI"/>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="29I-8S-TLg" secondAttribute="trailing" constant="20" id="2r3-pN-raE"/>
                             <constraint firstItem="YMC-S0-Xs2" firstAttribute="top" secondItem="w1q-lS-g2m" secondAttribute="bottom" constant="3" id="9IR-hc-DDp"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="F9M-xw-jkw"/>
                             <constraint firstItem="Xsf-ga-G4y" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="HTp-c8-C6W"/>
+                            <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="Xo7-dm-JdM" secondAttribute="trailing" constant="7" id="Jkp-iF-V18"/>
                             <constraint firstItem="gdp-hh-E86" firstAttribute="top" secondItem="29I-8S-TLg" secondAttribute="bottom" constant="8" id="P1E-IB-ff2"/>
                             <constraint firstItem="Xsf-ga-G4y" firstAttribute="top" secondItem="cT2-7I-Czf" secondAttribute="bottom" constant="8" id="UUi-fo-heX"/>
                             <constraint firstItem="29I-8S-TLg" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="20" id="Ue5-E8-IG6"/>
@@ -135,7 +148,9 @@
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="Xsf-ga-G4y" secondAttribute="trailing" constant="20" id="drr-g6-tyt"/>
                             <constraint firstItem="w1q-lS-g2m" firstAttribute="leading" secondItem="cT2-7I-Czf" secondAttribute="trailing" constant="12" id="e8E-6f-2u3"/>
                             <constraint firstItem="8N6-Li-mOt" firstAttribute="trailing" secondItem="gdp-hh-E86" secondAttribute="trailing" constant="20" id="hCH-bR-D2f"/>
+                            <constraint firstItem="Xo7-dm-JdM" firstAttribute="top" secondItem="8N6-Li-mOt" secondAttribute="top" constant="13" id="hM2-if-DCn"/>
                             <constraint firstItem="Xsf-ga-G4y" firstAttribute="bottom" secondItem="8N6-Li-mOt" secondAttribute="bottom" id="lfJ-Qt-vTw"/>
+                            <constraint firstItem="Xo7-dm-JdM" firstAttribute="leading" secondItem="8N6-Li-mOt" secondAttribute="leading" constant="667" id="xQK-TS-q9E"/>
                             <constraint firstItem="YMC-S0-Xs2" firstAttribute="leading" secondItem="QLB-lE-9s2" secondAttribute="centerX" constant="-50" id="yiG-B5-y7U"/>
                             <constraint firstItem="w1q-lS-g2m" firstAttribute="top" secondItem="gdp-hh-E86" secondAttribute="bottom" constant="31" id="zgY-gd-aMb"/>
                         </constraints>
@@ -151,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyI-7r-NLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834.7826086956522" y="907.36607142857133"/>
+            <point key="canvasLocation" x="1834.0740740740739" y="907.22222222222217"/>
         </scene>
         <!--Shopping View Controller-->
         <scene sceneID="hqF-Zm-RU2">
@@ -162,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-kx-kam">
-                                <rect key="frame" x="590" y="880" width="102" height="122"/>
+                                <rect key="frame" x="641" y="941" width="51" height="61"/>
                                 <state key="normal" image="profile"/>
                                 <connections>
                                     <segue destination="PKB-ba-n8h" kind="show" id="shi-Kl-Ga2"/>
@@ -211,14 +226,14 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-uC-Udk">
-                                <rect key="frame" x="258" y="866" width="196" height="136"/>
+                                <rect key="frame" x="307" y="934" width="98" height="68"/>
                                 <state key="normal" image="camera"/>
                                 <connections>
                                     <segue destination="D4e-rL-jIv" kind="show" id="o8F-vM-JDx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-IW-RS3">
-                                <rect key="frame" x="20" y="852" width="186" height="150"/>
+                                <rect key="frame" x="20" y="927" width="93" height="75"/>
                                 <state key="normal" image="shoppingSelected"/>
                             </button>
                         </subviews>
@@ -261,21 +276,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-b0-WK9">
-                                <rect key="frame" x="20" y="847" width="186" height="150"/>
+                                <rect key="frame" x="20" y="922" width="93" height="75"/>
                                 <state key="normal" image="shopping"/>
                                 <connections>
                                     <segue destination="EMu-h7-jRR" kind="show" id="9zt-42-ycp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlT-La-wu4">
-                                <rect key="frame" x="258" y="861" width="196" height="136"/>
+                                <rect key="frame" x="307" y="929" width="98" height="68"/>
                                 <state key="normal" image="camera"/>
                                 <connections>
                                     <segue destination="D4e-rL-jIv" kind="show" id="kbw-X4-QQy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3a-Dm-mak">
-                                <rect key="frame" x="590" y="877" width="102" height="120"/>
+                                <rect key="frame" x="641" y="937" width="51" height="60"/>
                                 <state key="normal" image="profileselected"/>
                             </button>
                         </subviews>

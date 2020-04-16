@@ -70,6 +70,7 @@ class ShoppingViewController: UIViewController {
             searching = false
             searchBar.text = ""
             tbView.reloadData()
+searchBar.resignFirstResponder()
         }
     }
 
