@@ -58,6 +58,7 @@ class CameraViewController: UIViewController,  AVCaptureMetadataOutputObjectsDel
         {
             print(code)
             currentBarcode = code
+            print(currentBarcode)
     performSegue(withIdentifier: "popUpSegue", sender: CameraViewController())
             scanner?.requestCaptureSessionStopRunning()
         }
