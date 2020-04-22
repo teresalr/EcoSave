@@ -58,7 +58,7 @@ class CameraViewController: UIViewController,  AVCaptureMetadataOutputObjectsDel
         {
             print(code)
             currentBarcode = code
-            performSegue(withIdentifier: "popUpSegue", sender: CameraViewController())
+    performSegue(withIdentifier: "popUpSegue", sender: CameraViewController())
             scanner?.requestCaptureSessionStopRunning()
         }
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

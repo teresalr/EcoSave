@@ -22,7 +22,9 @@ class PopUpViewController: UIViewController {
         
         super.viewDidLoad()
         
-        //Indetifies Rating
+        let url = NSURL(fileURLWithPath: "https://www.ewg.org/foodscores/products/" + (barcode ?? "B079CYRP2W")+"/")
+        
+        //Identifies Rating
         
         if barcode == "0078783508037"{
             rating = 1
