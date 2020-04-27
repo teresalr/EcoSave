@@ -29,7 +29,10 @@ class PopUpViewController: UIViewController, WKUIDelegate {
            view = myWebView
        }
     override func viewDidLoad() {
-        
+        if var b = barcode{
+            b.remove(at: b.startIndex)
+            barcode = b
+        }
         super.viewDidLoad()
         
         let myURL = URL(string:"https://www.ewg.org/foodscores/products/" + (barcode ?? "B079CYRP2W")+"/")
