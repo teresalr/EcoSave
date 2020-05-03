@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D4e-rL-jIv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D4e-rL-jIv">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-Im-B2p">
-                                <rect key="frame" x="20" y="927" width="147" height="75"/>
+                                <rect key="frame" x="20" y="852" width="240" height="150"/>
                                 <state key="normal" title="Button" image="shopping"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-wm-u1i">
-                                <rect key="frame" x="622" y="941" width="70" height="61"/>
+                                <rect key="frame" x="622" y="880" width="70" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="gOl-TU-x7w"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRU-nG-zrN">
-                                <rect key="frame" x="280" y="933" width="152" height="69"/>
+                                <rect key="frame" x="231" y="864" width="250" height="138"/>
                                 <state key="normal" title="Button" image="camera selected"/>
                             </button>
                         </subviews>
@@ -187,21 +187,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej7-kx-kam">
-                                <rect key="frame" x="641" y="941" width="51" height="61"/>
+                                <rect key="frame" x="590" y="880" width="102" height="122"/>
                                 <state key="normal" image="profile"/>
                                 <connections>
                                     <segue destination="PKB-ba-n8h" kind="show" id="shi-Kl-Ga2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-uC-Udk">
-                                <rect key="frame" x="307" y="934" width="98" height="68"/>
+                                <rect key="frame" x="258" y="866" width="196" height="136"/>
                                 <state key="normal" image="camera"/>
                                 <connections>
                                     <segue destination="D4e-rL-jIv" kind="show" id="o8F-vM-JDx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-IW-RS3">
-                                <rect key="frame" x="20" y="927" width="93" height="75"/>
+                                <rect key="frame" x="20" y="852" width="186" height="150"/>
                                 <state key="normal" image="shoppingSelected"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ug5-b5-0ia">
@@ -263,21 +263,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-b0-WK9">
-                                <rect key="frame" x="20" y="922" width="93" height="75"/>
+                                <rect key="frame" x="20" y="847" width="186" height="150"/>
                                 <state key="normal" image="shopping"/>
                                 <connections>
                                     <segue destination="EMu-h7-jRR" kind="show" id="9zt-42-ycp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlT-La-wu4">
-                                <rect key="frame" x="307" y="929" width="98" height="68"/>
+                                <rect key="frame" x="258" y="861" width="196" height="136"/>
                                 <state key="normal" image="camera"/>
                                 <connections>
                                     <segue destination="D4e-rL-jIv" kind="show" id="kbw-X4-QQy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3a-Dm-mak">
-                                <rect key="frame" x="641" y="937" width="51" height="60"/>
+                                <rect key="frame" x="590" y="877" width="102" height="120"/>
                                 <state key="normal" image="profileselected"/>
                             </button>
                         </subviews>
