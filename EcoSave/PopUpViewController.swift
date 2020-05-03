@@ -35,7 +35,7 @@ class PopUpViewController: UIViewController, WKUIDelegate {
         }
         super.viewDidLoad()
         
-        let myURL = URL(string: "https://www.ewg.org/foodscores/products/" + barcode!)
+        let myURL = URL(string: "https://www.ewg.org/foodscores/products/" + (barcode ?? "099482435653"))
         let myRequest = URLRequest(url: myURL!)
         myWebView.load(myRequest)
 //
