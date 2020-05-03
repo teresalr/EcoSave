@@ -35,12 +35,10 @@ class PopUpViewController: UIViewController, WKUIDelegate {
         }
         super.viewDidLoad()
         
-        let myURL = URL(string:"https://www.ewg.org/foodscores/products/099482435653")
-            
-//            + (barcode ?? "B079CYRP2W")+"/")
+        let myURL = URL(string: "https://www.ewg.org/foodscores/products/" + barcode!)
         let myRequest = URLRequest(url: myURL!)
         myWebView.load(myRequest)
-//    
+//
 //        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
 //        let image = renderer.image { ctx in
 //            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
