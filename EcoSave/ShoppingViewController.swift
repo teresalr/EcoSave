@@ -10,7 +10,7 @@ import UIKit
 
 class ShoppingViewController: UIViewController {
     
-    var final : String = ""
+    var final : String = "https://www.ewg.org/foodscores/products/?search="
     
     @IBOutlet weak var input: UITextField!
    
@@ -23,9 +23,9 @@ class ShoppingViewController: UIViewController {
                     str.insert("+", at: index)
                 }
             }
-            final = str
+            final += str
         }
-        
+        performSegue(withIdentifier: "searchSegue", sender: ShoppingViewController())
         
     }
     
@@ -33,6 +33,12 @@ class ShoppingViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is SearchViewController{
+            let vc = segue.destination as? SearchViewController
+            vc?.link = final
+        }
+    }
     
         
     }
