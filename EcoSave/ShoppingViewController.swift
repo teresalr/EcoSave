@@ -11,6 +11,10 @@ import UIKit
 class ShoppingViewController: UIViewController {
 
     @IBOutlet weak var input: UITextField!
+   
+    @IBAction func search(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
