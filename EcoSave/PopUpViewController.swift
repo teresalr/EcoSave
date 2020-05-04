@@ -26,8 +26,9 @@ class PopUpViewController: UIViewController, WKUIDelegate {
 
         myWebView = WKWebView()
         myWebView.uiDelegate = self
-           view = myWebView
+        view = myWebView
        }
+    
     override func viewDidLoad() {
         if var b = barcode{
             b.remove(at: b.startIndex)

@@ -14,12 +14,15 @@ class SearchViewController: UIViewController, WKUIDelegate {
     @IBOutlet var web: WKWebView!
     var link : String?
     
+    @IBOutlet weak var webview: WKWebView!
+   
     override func loadView() {
     //    let webConfiguration = WKWebViewConfiguration()
 
+        
      web = WKWebView()
      web.uiDelegate = self
-        view = web
+    webview = web
     }
 
     
@@ -28,7 +31,7 @@ class SearchViewController: UIViewController, WKUIDelegate {
         if let url = link{
             let myURL = URL(string:url)
             let myRequest = URLRequest(url: myURL!)
-            web.load(myRequest)
+            webview.load(myRequest)
         }
         // Do any additional setup after loading the view.
         
